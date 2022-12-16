@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bggradient">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="64dp"
+        android:ems="16"
+        android:hint="Kullanıcı Adı"
+        android:background="@drawable/border"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="64dp"
+        android:ems="16"
+        android:hint="Şifre"
+        android:background="@drawable/border"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnforgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/forgetpassbg"
+        android:ems="10"
+        android:padding="8dp"
+        android:text="Şifremi Unuttum"
+        android:textAlignment="center"
+        android:textColor="@color/ForgetPass"
+        android:textSize="11dp"
+        android:minWidth="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48.5dp"
+        android:layout_marginTop="14.5dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/girisbtnbg"
+        android:ems="10"
+        android:text="Giriş"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="12.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="235dp"
+        android:textColor="#C32929"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
